@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\BigFish.cs" />
+    <Compile Include="Model\MediumFish.cs" />
+    <Compile Include="Model\SmallFish.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Level1.cs" />
@@ -53,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controller\TextFile1.txt" />
-    <Content Include="Model\TextFile1.txt" />
     <Content Include="View\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
