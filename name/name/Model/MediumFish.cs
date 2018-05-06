@@ -21,6 +21,7 @@ namespace name.Model
         public virtual void Eat()
         {
             ++count;
+            if (n == Char.ToUpper(n)) ++count;
             if (count == 1) n = Char.ToUpper(n);
         }
 
