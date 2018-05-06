@@ -16,10 +16,34 @@ namespace name.Controller
                { null,              null,               null}
             };
 
+        SmallFish currentFish;
+        SmallFish findFish;
+
         public SeaClass()
         {
             //random sea generation
         }
+
+        public SmallFish find(int a)
+        {
+            for (int i = (int)Math.Sqrt(sea.Length) - 1; i >= 0; i--)
+            {
+                if (sea[i, a] != null)
+                {
+                    return sea[i, a];
+                }
+            }
+            return null;
+        }
+
+        public void Position(int a, int b)
+        {
+            currentFish = find(a);
+            findFish = find(b);
+            
+            
+        }
+
 
       
         public SmallFish[,] Sea(int n)
