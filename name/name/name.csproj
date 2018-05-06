@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Fish.cs" />
+    <Compile Include="Controller\SeaClass.cs" />
     <Compile Include="Model\BigFish.cs" />
     <Compile Include="Model\MediumFish.cs" />
     <Compile Include="Model\SmallFish.cs" />
