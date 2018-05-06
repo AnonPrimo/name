@@ -8,22 +8,12 @@ namespace name.Model
 {
     class BigFish : MediumFish
     {
-        public override int Count
-        {
-            get { return count; }
-        }
-
-        public override char N
-        {
-            get { return n; }
-        }
 
         public BigFish() { n = 'b'; count = 0; }
-
-        public override void Eat()
+        
+        public override string ToString()
         {
-            ++count;
-            if (count == 1) n = 'B';
+            return "Fish: letter - " + n + " count - " + count;
         }
 
     }

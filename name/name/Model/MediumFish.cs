@@ -14,20 +14,20 @@ namespace name.Model
         {
             get { return count; }
         }
-
-        public override char N
-        {
-            get { return n; }
-        }
+        
     
         public MediumFish() { n = 'm'; count = 0; }
 
         public virtual void Eat()
         {
             ++count;
-            if (count == 1) n = 'M';
+            if (count == 1) n = Char.ToUpper(n);
         }
 
+        public override string ToString()
+        {
+            return "Fish: letter - " + n + " count - " + count;
+        }
 
     }
 }

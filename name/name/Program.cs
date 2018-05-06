@@ -10,7 +10,6 @@ namespace name
     {
         static void Main(string[] args)
         {
-
         }
     }
 }

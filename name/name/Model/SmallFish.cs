@@ -10,11 +10,16 @@ namespace name.Model
     {
         protected char n;
 
-        public virtual char N
+        public  char N
         {
             get { return n; }
         }
 
         public SmallFish() { n = 's'; }
+
+        public override string ToString()
+        {
+            return "Fish: letter - " + n;
+        }
     }
 }
