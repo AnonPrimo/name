@@ -10,17 +10,14 @@ namespace name.Controller
 {
     class SeaClass
     {
-        SmallFish[,] sea = new SmallFish[,] {
-               { new SmallFish(),   new MediumFish(),   new BigFish() },
-               { null,              null,               null},
-               { null,              null,               null}
-            };
+        SmallFish[,] sea;
 
         SmallFish currentFish;
         private int rows;
         private int cols;
         private int Counter;
 
+        View.Level level = new View.Level();        
 
         public void find(int a)
         {
@@ -35,8 +32,6 @@ namespace name.Controller
                 }
             }
         }
-
-
 
         public int isFish(int x)
         {
@@ -72,6 +67,7 @@ namespace name.Controller
 
             this.Counter = Counter;
             this.sea = sea;
+            level.ShowFishes(sea);
         }
         public bool push(int b)
         {
@@ -88,6 +84,7 @@ namespace name.Controller
                 if (((BigFish)previosFish).Eat())
                 {
                     sea[x, b] = null;
+                    currentFish = null;
                     return true;
                 }
                 return false;
@@ -96,6 +93,7 @@ namespace name.Controller
             {
                 if (((MediumFish)previosFish).Eat())
                 {
+                    currentFish = null;
                     sea[x, b] = null;
                     return true;
                 }
@@ -109,17 +107,43 @@ namespace name.Controller
 
         }
 
-
-
         public SeaClass(int cols, int rows)
         {
             this.cols = cols;
             this.rows = rows;
             sea = new SmallFish[rows, cols]; // ініціалізація розмірнсті.
 
-            for (int i = 0; i < rows; i++) // Заповнення null.
-                for (int j = 0; j < cols; j++)
-                    sea[i, j] = null;
+            //for (int i = 0; i < rows; i++) // Заповнення null.
+            //    for (int j = 0; j < cols; j++)
+            //        sea[i, j] = null;
+
+            StartNewLevel(0, new SmallFish[,] {
+               { new SmallFish(),   new MediumFish(),   new BigFish() },
+               { null,              null,               null},
+               { null,              null,               null}
+            });
+            this.StartGame();
         }
+
+        private void StartGame()
+        {
+            while (true)
+            {
+                level.RefreshConsole(sea);
+                Console.WriteLine("Взяти рибку");
+                int index1 = level.GetIndexFindFish();
+                this.find(index1);
+                if (currentFish == null)
+                    continue;
+                level.RefreshConsole(sea);
+                int index2 = level.GetIndexFindFish();
+                if (!this.push(index2))
+                {
+                    this.push(index1);
+                    continue;
+                }
+            }
+        }
+
     }
 }

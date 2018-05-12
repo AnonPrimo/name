@@ -10,8 +10,8 @@ namespace name
     {
         static void Main(string[] args)
         {
-            View.mainView m = new View.mainView();
-            m.StartGame();
+            Controller.SeaClass controller = new Controller.SeaClass(3, 3);
+            Console.ReadLine();
         }
     }
 }

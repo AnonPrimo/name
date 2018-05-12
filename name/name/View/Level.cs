@@ -10,7 +10,10 @@ namespace name.View
 {
     class Level {
 
-
+        public Level()
+        {
+            StartGame();
+        }
 
         /// <summary>
         /// Метод конвертує масив риб у масив символів
@@ -41,7 +44,6 @@ namespace name.View
         /// <param name="Sea"> Масив риб для виводу на екран </param>
         public void ShowFishes(SmallFish[,] Sea)
         {
-
             int length = Sea.GetLength(0);
             int width = Sea.GetLength(1);
             char[,] Fishes = new char[length, width];
@@ -105,7 +107,22 @@ namespace name.View
             Console.ReadKey();
         }
 
+        public void StartGame()
+        {
+            //Console.SetWindowSize(500, 500);
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.Clear();
+            Console.Title = "GAME FISH";
+        }
 
+        public int GetIndexFindFish()
+        {
+            int index;
+            if (!int.TryParse(Console.ReadLine(), out index))
+                Environment.Exit(0);
+            return index;
+        }
 
     }
 }
