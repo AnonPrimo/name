@@ -17,29 +17,27 @@ namespace name.Controller
             };
 
         SmallFish currentFish;
-        public SeaClass()
-        {
-            //random sea generation
-        }
+        private int rows;
+        private int cols;
+        private int Counter;
 
-        public SmallFish find(int a)
+
+        public void find(int a)
         {
-            for (int i = (int)Math.Sqrt(sea.Length) - 1; i >= 0; i--)
+            currentFish = null;
+            for (int i = sea.GetLength(0)-1; i >= 0; i--)
             {
                 if (sea[i, a] != null)
                 {
-                    return sea[i, a];
+                    currentFish = sea[i, a];
+                    sea[i, a] = null;
+                    break;
                 }
             }
-            return null;
         }
 
-        
-        private int rows;
 
-        
-        private int cols;
-       
+
         public int isFish(int x)
         {
             for (int i = (int)Math.Sqrt(sea.Length) - 1; i >= 0; i--)
@@ -48,7 +46,7 @@ namespace name.Controller
             return -1;
         }
 
-       
+
         private bool Position(out SmallFish f, out int x, int b)
         {
             f = null;
@@ -66,19 +64,18 @@ namespace name.Controller
             return true;
         }
 
-        
-        public void StartNewLevel(int Counter, SmallFish [,] sea)
-       
-        
+
+        public void StartNewLevel(int Counter, SmallFish[,] sea)
+        {
             if (sea.Length != this.sea.Length)
                 throw new Exception("Розмірності масивів не співпадають");
 
             this.Counter = Counter;
             this.sea = sea;
         }
-    public bool push(int b)
-    {
-        if (currentFish == null) return false;
+        public bool push(int b)
+        {
+            if (currentFish == null) return false;
 
 
             int x;
@@ -111,9 +108,9 @@ namespace name.Controller
             }
 
         }
-       
-        
-        
+
+
+
         public SeaClass(int cols, int rows)
         {
             this.cols = cols;
