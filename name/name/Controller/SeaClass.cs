@@ -22,7 +22,7 @@ namespace name.Controller
         /// <summary>
         /// Лічильник якусів для рандомної генерації.
         /// </summary>
-        private int counter;
+        private int Counter;
 
         /// <summary>
         /// Кількість рядків в масиві.
@@ -39,12 +39,12 @@ namespace name.Controller
         /// </summary>
         /// <param name="Counter">Лічильник ярусів для рандомної генерації</param>
         /// <param name="sea">Масив з рибками</param>
-        public void StartNewLevel(int counter, SmallFish [,] sea)
+        public void StartNewLevel(int Counter, SmallFish [,] sea)
         {
             if (sea.Length != this.sea.Length)
                 throw new Exception("Розмірності масивів не співпадають");
 
-            this.counter = counter;
+            this.Counter = Counter;
             this.sea = sea;
         }
 
