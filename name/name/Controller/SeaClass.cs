@@ -19,7 +19,9 @@ namespace name.Controller
         SmallFish currentFish;
         SmallFish findFish;
 
-        private int Counter; // Лічильник якусів для рандомної генерації.
+        /// Лічильник якусів для рандомної генерації.
+
+        private int Counter; 
 
         /// <summary>
         /// Створення нового рівня
@@ -34,7 +36,7 @@ namespace name.Controller
 
         public SeaClass()
         {
-            //random sea generation
+            ///random sea generation
         }
 
         public SmallFish find(int a)
