@@ -8,6 +8,8 @@ namespace name.Model
 {
     class SmallFish
     {
+        /// створюємо змінну яка міститиме тип рибки
+
         protected char n;
 
         public  char N
@@ -16,6 +18,8 @@ namespace name.Model
         }
 
         public SmallFish() { n = 's'; }
+        
+        /// виводимо інформацію про рибку
 
         public override string ToString()
         {
