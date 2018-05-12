@@ -88,7 +88,7 @@ namespace name.View
         /// </summary>
         public void TestFunc()
         {
-
+            
             Console.WriteLine("\nLEVEL 1\n");
             int length = 10;
             int width = 5;
@@ -100,6 +100,7 @@ namespace name.View
             ShowFishes(Fishes);
             Console.ReadKey();
             Fishes[0, 1] = new SmallFish();
+            Console.Title = "Test Func";
             RefreshConsole(Fishes);
             Console.ReadKey();
         }

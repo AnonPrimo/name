@@ -12,7 +12,6 @@ namespace name
         {
             View.mainView m = new View.mainView();
             m.StartGame();
-            Console.ReadKey();
         }
     }
 }

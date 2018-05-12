@@ -12,9 +12,9 @@ namespace name.View
         {
             //Console.SetWindowSize(500, 500);
             Console.ForegroundColor = ConsoleColor.Black; 
-            Console.BackgroundColor = ConsoleColor.Cyan; 
+            Console.BackgroundColor = ConsoleColor.Cyan;
             Console.Clear();
-            Console.WriteLine("\tGAME FISH");
+            Console.Title = "GAME FISH";
             Level l = new Level();
             l.TestFunc();
         }
