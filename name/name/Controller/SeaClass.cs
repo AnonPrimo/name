@@ -19,6 +19,19 @@ namespace name.Controller
         SmallFish currentFish;
         SmallFish findFish;
 
+        private int Counter; // Лічильник якусів для рандомної генерації.
+
+        /// <summary>
+        /// Створення нового рівня
+        /// </summary>
+        /// <param name="Counter">Лічильник ярусів для рандомної генерації</param>
+        /// <param name="sea">Масив з рибками</param>
+        public void StartNewLevel(int Counter, SmallFish [,] sea)
+        {
+            this.Counter = Counter;
+            this.sea = sea;
+        }
+
         public SeaClass()
         {
             //random sea generation
