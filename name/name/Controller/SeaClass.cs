@@ -35,7 +35,9 @@ namespace name.Controller
 
         public int isFish(int x)
         {
-            for (int i = (int)Math.Sqrt(sea.Length) - 1; i >= 0; i--)
+            if(x >= sea.GetLength(0))
+                return -1;
+            for (int i = sea.GetLength(0) - 1; i >= 0; i--)
                 if (sea[i, x] != null)
                     return i;
             return -1;
@@ -46,7 +48,7 @@ namespace name.Controller
         {
             f = null;
             x = isFish(b);
-            if (x + 1 >= sea.Length)
+            if (x + 1 >= sea.GetLength(0))
                 return false;
             if (x == -1)
             {
@@ -81,19 +83,19 @@ namespace name.Controller
 
             if (currentFish is MediumFish && previosFish is BigFish)
             {
+                currentFish = null;
                 if (((BigFish)previosFish).Eat())
                 {
                     sea[x, b] = null;
-                    currentFish = null;
                     return true;
                 }
                 return false;
             }
             else if (currentFish is SmallFish && previosFish is MediumFish)
             {
+                currentFish = null;
                 if (((MediumFish)previosFish).Eat())
                 {
-                    currentFish = null;
                     sea[x, b] = null;
                     return true;
                 }
@@ -102,6 +104,7 @@ namespace name.Controller
             else
             {
                 sea[x + 1, b] = currentFish;
+                currentFish = null;
                 return true;
             }
 
