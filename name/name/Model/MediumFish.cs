@@ -26,7 +26,7 @@ namespace name.Model
         {
             bool b = false;
             ++count;
-            if (n == Char.ToUpper(n)) ++count;
+            //if (n == Char.ToUpper(n)) ++count;
             if (count == 1) n = Char.ToUpper(n);
             if (count == 2) b = true;
             return b;

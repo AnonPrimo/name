@@ -10,9 +10,13 @@ namespace name.View
     {
         public void StartGame()
         {
+            //Console.SetWindowSize(500, 500);
+            Console.ForegroundColor = ConsoleColor.Black; 
+            Console.BackgroundColor = ConsoleColor.Cyan; 
+            Console.Clear();
             Console.WriteLine("\tGAME FISH");
             Level l = new Level();
-            l.StartLevel1();
+            l.TestFunc();
         }
     }
 }
