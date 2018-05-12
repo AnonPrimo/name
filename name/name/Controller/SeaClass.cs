@@ -17,23 +17,28 @@ namespace name.Controller
             };
 
         SmallFish currentFish;
-             
-      
-      
-        public void find(int a)
+        public SeaClass()
         {
-            currentFish = null;
+            //random sea generation
+        }
+
+        public SmallFish find(int a)
+        {
             for (int i = (int)Math.Sqrt(sea.Length) - 1; i >= 0; i--)
             {
                 if (sea[i, a] != null)
                 {
-                   currentFish = sea[i, a];
-                    sea[i, a] = null;
-                    break;
+                    return sea[i, a];
                 }
             }
+            return null;
         }
 
+        
+        private int rows;
+
+        
+        private int cols;
        
         public int isFish(int x)
         {
@@ -61,10 +66,19 @@ namespace name.Controller
             return true;
         }
 
+        
+        public void StartNewLevel(int Counter, SmallFish [,] sea)
        
-        public bool push(int b)
-        {
-            if (currentFish == null) return false;
+        
+            if (sea.Length != this.sea.Length)
+                throw new Exception("Розмірності масивів не співпадають");
+
+            this.Counter = Counter;
+            this.sea = sea;
+        }
+    public bool push(int b)
+    {
+        if (currentFish == null) return false;
 
 
             int x;
@@ -99,5 +113,16 @@ namespace name.Controller
         }
        
         
+        
+        public SeaClass(int cols, int rows)
+        {
+            this.cols = cols;
+            this.rows = rows;
+            sea = new SmallFish[rows, cols]; // ініціалізація розмірнсті.
+
+            for (int i = 0; i < rows; i++) // Заповнення null.
+                for (int j = 0; j < cols; j++)
+                    sea[i, j] = null;
+        }
     }
 }

@@ -10,7 +10,9 @@ namespace name.Model
     {
 
         public BigFish() { n = 'b'; count = 0; }
-        
+
+        /// виводимо інформацію про рибку
+
         public override string ToString()
         {
             return "Fish: letter - " + n + " count - " + count;
