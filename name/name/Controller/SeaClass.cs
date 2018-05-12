@@ -39,6 +39,7 @@ namespace name.Controller
         /// </summary>
         /// <param name="Counter">Лічильник ярусів для рандомної генерації</param>
         /// <param name="sea">Масив з рибками</param>
+        /// 
         public void StartNewLevel(int Counter, SmallFish [,] sea)
         {
             if (sea.Length != this.sea.Length)
