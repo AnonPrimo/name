@@ -8,10 +8,17 @@ namespace name.Model
 {
     class SaveGame
     {
-        static void MainSaveGame(int[,] ar)
+        static bool MainSaveGame(bool b, SmallFish[,] ar, char keepfish, int col1, int col2)
         {
-            int[,] game = ar;
-
+            bool sg = b;
+            if (sg = true)
+            {
+                SmallFish[,] game = ar;
+                char buf = keepfish;
+                int fromcol = col1;
+                int incol = col2;
+            }
+            return sg;
         }
     }
 }
