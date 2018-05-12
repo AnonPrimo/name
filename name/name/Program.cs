@@ -18,6 +18,10 @@ namespace name
             m.StartGame();
             Console.ResetColor(); // сбрасываем в стандартный
             Console.ReadKey();
+
+           
+           
+
         }
     }
 }
