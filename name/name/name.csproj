@@ -46,6 +46,7 @@
     <Compile Include="Controller\SeaClass.cs" />
     <Compile Include="Model\BigFish.cs" />
     <Compile Include="Model\MediumFish.cs" />
+    <Compile Include="Model\SaveGame.cs" />
     <Compile Include="Model\SmallFish.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

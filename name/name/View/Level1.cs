@@ -52,7 +52,7 @@ namespace name.View
             // SmallFish[,] Fishes = new SmallFish[lenght, width]; // масив риб у грі.
 
            char [,]Fishes = new char[length, width];
-            Fishes[0,0] = 's';
+            Fishes[0, 0] = 's';
             Fishes[0, 1] = ' ';
             Fishes[0, 2] = ' ';
             Fishes[1, 0] = ' ';
