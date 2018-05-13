@@ -22,6 +22,8 @@ namespace name.Controller
         public void find(int a)
         {
             currentFish = null;
+            if (a >= sea.GetLength(1))
+                return;
             for (int i = sea.GetLength(0)-1; i >= 0; i--)
             {
                 if (sea[i, a] != null)
@@ -81,24 +83,24 @@ namespace name.Controller
             if (!Position(out previosFish, out x, b))
                 return false;
 
-            if (currentFish is MediumFish && previosFish is BigFish)
+            if (!(currentFish is BigFish) && currentFish is MediumFish && previosFish is BigFish )
             {
-                currentFish = null;
-                if (((BigFish)previosFish).Eat())
+                if (((BigFish)previosFish).Eat() || ((MediumFish)currentFish).Count == 1)
                 {
                     sea[x, b] = null;
                     return true;
                 }
+                currentFish = null;
                 return false;
             }
-            else if (currentFish is SmallFish && previosFish is MediumFish)
+            else if (!(currentFish is MediumFish) && !(previosFish is BigFish) && (previosFish is MediumFish))
             {
-                currentFish = null;
                 if (((MediumFish)previosFish).Eat())
                 {
                     sea[x, b] = null;
                     return true;
                 }
+                currentFish = null;
                 return false;
             }
             else
