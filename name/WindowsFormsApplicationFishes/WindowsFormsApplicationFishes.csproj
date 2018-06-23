@@ -69,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -82,6 +83,201 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Рибки-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_frame_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_frame_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_frame_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_frame_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_frame_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_frame_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_frame_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_one_spritesheet_512px_by_512px_per_frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buble_pop_two_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buble_pop_two_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buble_pop_two_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buble_pop_two_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buble_pop_two_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buble_pop_two_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buble_pop_two_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buble_pop_two_spritesheet_512px_by512px_per_frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_under_water_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_under_water_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_under_water_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_under_water_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_under_water_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_under_water_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_under_water_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_under_water_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble_pop_under_water_spritesheet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
