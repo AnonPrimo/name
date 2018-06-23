@@ -17,21 +17,15 @@ namespace name.Model
             get { return count; }
         }
 
-        public virtual bool Eat()
+        public virtual bool Eat(SmallFish smallFish)
         {
+            if (!(smallFish is SmallFish))
+                return false;
             bool b = false;
             ++count;
-            if (count == 1) n = Char.ToUpper(n);
+            if (count == 1) n = Char.ToUpper(n); // Присвоїти нову картинку.
             if (count == 2) b = true;
             return b;
         }
-
-        /// виводимо інформацію про рибку
-
-        public override string ToString()
-        {
-            return "Fish: letter - " + n + " count - " + count;
-        }
-
     }
 }
