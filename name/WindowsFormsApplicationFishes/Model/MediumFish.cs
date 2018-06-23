@@ -16,11 +16,6 @@ namespace name.Model
         {
             get { return count; }
         }
-        
-    
-        public MediumFish() { n = 'm'; count = 0; }
-
-        /// метод Eat() збільшує лічильник рибки і збільшує літеру якщо вона з'їла одну
 
         public virtual bool Eat()
         {
