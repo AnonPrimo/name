@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace name.Model
+namespace WindowsFormsApplicationFishes.Model
 {
     class MediumFish : SmallFish
     {
@@ -23,8 +23,8 @@ namespace name.Model
                 return false;
             bool b = false;
             ++count;
-            if (count == 1) n = Char.ToUpper(n); // Присвоїти нову картинку.
-            if (count == 2) b = true;
+            //if (count == 1) n = Char.ToUpper(n); // Присвоїти нову картинку.
+            //if (count == 2) b = true;
             return b;
         }
     }
